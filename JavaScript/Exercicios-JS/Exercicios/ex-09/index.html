@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="./main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços: Loop com While e For</title>
+</head>
+<body>
+    <h1>While</h1>
+    <p>
+        Cria um loop. Pode ser colocado uma condição para a execução do loop, e enquanto essa condição for verdadeira o loop continuo.
+    </p>
+    <h1>Do...While.</h1>
+    <p>
+        O "Do..While" inverte o quando a condição será lida pelo programa. Enquanto no <strong>While</strong> a condição e lida em cima, no <strong>Do...While</strong> ela e a ultima.
+    </p>
+    <p>
+        <strong>EX:</strong>
+
+        Let ex = 0;
+
+        While(ex < 3) {
+            alert(ex);
+            ex++;
+        }
+
+        <strong>EX 2:</strong>
+        Let ex = 0;
+
+        Do {
+            alert(ex);
+            ex++;
+        } While(ex < 3);
+    </p>
+    <h1>For</h1>
+    <p>
+        Ele e mais complexo, mas e o mais usado. 
+        Ele segue uma ordem de execuçãp:
+    </p>
+    <ul>
+        <li>1  Vá para o começo.</li>
+        <li>2  Se condição TRUE -> Vá para corpo e depois passo.
+    </ul>
+    <p>
+        Um exemplo basico:
+
+        For (Começo; Condição; Passo) {
+            //Loop Body
+        }
+    </p>
+    <h2>E possivel usar qualquer variavel ja existente, ou pode criar uma nele mesmo.</h2>
+    <p>
+        Ex:
+
+        For (let id = 0; id < 3; id++) {
+            alert(id);
+        }
+    </p>
+    <p>
+        Da pra omitir qualquer uma das partes do For ou ate mesmo não usar nenhuma, mas os dois ponto e virgula são obrigatorios.
+        Um EX:
+
+        let id = prompt('Digite algo:');
+
+        For (;;) {
+            alert(id);
+
+        }
+    </p>
+
+    
+</body>
+</html>
