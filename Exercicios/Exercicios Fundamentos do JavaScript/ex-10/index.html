@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="./main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaração Swicth</title>
+</head>
+<body>
+    <h1>Switch</h1>
+    <p>
+        E uma declaração que pode ser usada para substituir o <strong>If</strong> em determinadas situações.
+
+        Sua sintaxe e assim:
+
+        Swicth(variavel) {
+            case 'valor 1':
+                alert('lorem');
+            break;
+
+            case 'valor 2':
+                alert(lorem2);
+            break;
+
+            case 'valor 3':
+                alert(lorem3);
+            break;
+        }
+    </p>
+    <p>
+        As 'cases' são como se fossem opções de escolha, a Switch analisa cada uma delas e faz sua verificação.
+        Se tal <strong>case</strong> for verdadeira, ele a executa. Funciona com quase a mesma lógica do 'Escolha caso' do visualg,
+        mundando pouquissimas/nada do visualg.
+
+        O <strong>Break</strong> serve para que ele pare a execução naquela <strong>case</strong> que deu true, não executando as demais abaixo.
+        Um pequeno exemplo:
+
+        Let a = 2 + 2
+
+        Swicth(a) {
+            case 3:
+                alert('Icorrect');
+            Break
+
+            case 4:
+                alert('correct');
+            break;
+            //A 'case 4' e verdadeira, então ela será executada e por conter o break, sera parada a execução assim que for concluido.
+
+            case 5:
+                alert('what?...');
+            break;
+        }
+
+        Perceba que todos tem o <strong>break</strong>. Então o que for executado sera parada logo após sua execução.
+        Agora veja o que acontece se tirarmos o break. Usaremos o mesmo codigo acima:
+
+        Let a = 2 + 2
+
+        Swicth(a) {
+            case 3:
+                alert('Icorrect');
+            Break
+
+            case 4:
+                alert('correct');
+            case 5:
+                alert('what?...');
+            break;
+
+            //O case 4 e 5 serão executados mesmo só o 4 sendo verdadeiro pois não há o break na case 4.
+
+        }
+
+        Veja que por ausencia do <strong>break</strong> na case 4, tudo o que vier após ela será executado sem a verificação pois somente a case 4 que deu true.
+        Então o progama não verifica mais e segue até ter algum break ou até o <strong>default</strong>.
+
+
+        <strong>Default</strong> e o que o programa executara caso nenhuma 'case' for verdadeira.
+        Veja um pequeno exemplo:
+
+        Let x = 4 - 1
+
+        Swicth(x) {
+            case 2:
+                alert('No');
+            break;
+
+            case 4:
+                alert('yes');
+            break;
+
+            default:
+                alert('Algo deve estar errado...');
+            
+        }
+    </p>
+    <h1>Os tipos importam.</h1>
+    <p>
+        Aqui a verificação de igualdade e rigorosa, então sempre fique atento aos tipos.
+        Por exemplo, se você colocar um prompt para receber uma string, então a 'condição' das cases terão que ser em string.
+            Caso coloque um numero por exemplo, a case não irá funcionar.
+    </p>
+    
+    
+</body>
+</html>

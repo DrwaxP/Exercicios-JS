@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <header>
+        <h1>Funções</h1>
+    </header>
+    <h1>Declaração de uma Função</h1>
+        <p>
+            As funções servem como se fossem armazenamentos de um conjunto de "ações". Tem a mesma lógica do "Procedimento" do visualg.
+            Então de certa forma e fácil seu entendimento. 
+            Veja um exemplo de declaração de uma função:
+            <pre>
+                <code>
+                <strong>
+            function name(parametros) {
+                alert("Hello world!!");
+
+            }
+
+            name(); //a função e chamada e ele e executada, nesse caso, vai dar alert no Hello World.
+                </strong>
+                </code>
+            </pre>
+        </p>
+    <h1>Variaveis dentro das Funções.</h1>
+        <p>
+            E possivel declarar variaveis dentro de funções, variaveis essas que são denominadas "variaveis locais", 
+            pois uma variavel declarada dentro de uma função, só pode ser "vista" por essa função. Então qualquer variavel declarada dentro de uma função,
+            só existe dentro da função.
+            Para melhor entendimento, veja o exemplo a seguir:
+
+            <pre>
+                <code>
+                <strong>
+            function id() {
+                let numero = 2 + 2
+                alert(numero);
+            }
+            id(); //A função e chamada, e aqui a variavel e definida e alertada.
+
+            alert(numero); //O programa vai dizer error, pois não existe uma variavel "numero", pois foi definida na função,
+                                sendo uma variavel local.
+                </strong>
+                </code>
+            </pre>
+
+            As funções não se limitam a apenas variaveis locais, podendo tambem ser usado variaveis externas e tambem altera-las.
+            Veja um exemplo:
+
+            <pre>
+                <code>
+                <strong>
+            let age = ParseInt(Prompt('Qual a sua idade?'));
+
+            function token() {
+                if (age >= 18) {
+                    alert('Voce tem acesso.')
+
+                } else if ( age -menor que 18) {
+                    alert('Acesso negado.');
+                } 
+                
+            }
+
+            token();
+                </strong>
+                </code>
+            </pre>
+            Perceba que a variavel global foi definida sendo o "age", e logo em seguida na function ela foi usada. Variaveis externas ou variaveis globais, podem ser chamadas assim,
+            a function pode usa-las e altera-las. Variaveis declaradas fora de uma função,"externas", são chamadas de globais. 
+            A variável externa só é usada se não houver uma variável local.
+        </p>
+    <h1>Parâmetros</h1>
+        <p>
+            Os parâmetros são uma especie de variaveis, que, na chamada da função, recebem seus valores.
+            Um pequeno exemplo:
+
+            <pre>
+                <code>
+                <strong>
+            function nome(from, text) {
+                text = "*" + text + "*"
+                alert(from + ', ' + text);
+            }
+
+            nome('Olá', 'Paulo'); // Seu resultado será: Olá, Paulo
+                </strong>
+                </code>
+            </pre>
+
+            Veja que na chamada da função, foi definido dois parametros que foram usados passando seu valor para as variaveis.
+            Em outras palavras, o valor que você passa para os parametros, são chamados de argumentos.
+            - Um parametro, e uma variavel listada dentro dos parenteses na declaração da função.
+            - Um argumento, e o valor que você passa para a função na sua chamada.
+            Declaramos funções listando seus parâmetros e, em seguida, as chamamos passando argumentos. 
+        </p>
+        <h1>Valores Padrão</h1>
+            <p>
+                Se na chamada da função não for definido argumentos, o valor passado aos parametros e <strong>Undefined</strong>.
+                E possivel especificar o valor que recebeu Undefined utilizando o <strong>=</strong>, fazendo ele exibir outra coisa.
+                Para melhor explicar, usaremos um pequeno exemplo:
+
+                <pre>
+                    <code>
+                    <strong>
+                    function id(from, text = "Usuario não definido.") {
+                        from = prompt('Digite seu codigo: ');
+                        text = prompt('Digite seu nome: ');
+
+                        alert(ˋSeu codigo e ${from}. Seja bem vindo ${text}.ˋ);
+                    }
+
+                    id(P32K); //O resultado será: P32K, Usuario não definido.
+
+                    </strong>
+                    </code>
+                </pre>
+                Perceba que, só foi passado apenas um argumento na chamada da função. <strong>From</strong> recebeu esse argumento, mas o <strong>text</strong> não recebeu nenhum, então Undefined e o valor Padrão.
+                Mas veja que, na definição de parametros foi definido que <strong>text</strong> recebe "Usuario não definido".
+            </p>
+
+        
+</body>
+</html>
