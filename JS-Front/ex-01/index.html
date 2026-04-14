@@ -4,8 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document selector</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: black;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        header {
+            justify-content: center;
+            display: flex;
+            max-width: 100%;
+            border: 3px solid white;
+            margin: 10px;
+            padding: 10px;
+        }
+        .titulo {
+            align-items: center;
+            margin-right: auto;
+            font-size: 25pt;
+        }
+        nav {
+            display: flex;
+            justify-content: end;
+            margin-left: 40px;
+            align-items: center;
+            
+        }
+        nav a {
+            text-decoration: none;
+            color: snow;
+            font-size: 18pt;
+            padding: 5px;
+            margin-right: 10px;
+            position: relative;
+        }
+        nav a:hover::after {
+            cursor: pointer;
+            width: 100%;
+        }
+        nav a:after {
+            content: " ";
+            background: snow;
+            position: absolute;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            height: 5px;
+            transition: 0.3s ease-in-out;
+
+        }
+        h1 {
+            text-align: justify;
+            margin: 20px;
+            color: snow;
+
+        }
+        p {
+            text-align: justify;
+            padding: 20px;
+            color: snow;
+        }
+        .container {
+            margin: 10px;
+            padding: 10px;
+        }
+        .container-texto {
+            margin: 10px;
+            padding: 10px;
+        }
+        .container, .container-texto {
+            border-radius: 8px;
+            border: 3px solid white;
+        }
+        .container-search {
+            max-width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 10px;
+            margin: 5px;
+
+        }
+        #loading {
+            width: 100%;
+            height: 100%;
+            padding: 8px;
+           
+        }
+        #search {
+            padding: 8px;
+            margin: 10px;
+            border-radius: 10px;
+            border: black;
+            position: relative;
+        }
+        #search:hover::after {
+            cursor: pointer;
+            width: 100%;
+            background: black;
+            text-decoration: underline;
+            border: 3px solid white;
+            
+
+        }
+        #search:after {
+            content: "";
+            width: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 10px;
+            position: absolute;
+            transition: 0.2s ease-in-out;
+        }
+        .highlight { 
+            background-color: yellow; 
+        }
+        footer {
+            border-radius: 4px;
+            border: 3px solid white;
+            max-width: 100%;
+            background: black;
+            margin: 10px;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        footer h3 {
+            text-align: center;
+            color: snow;
+            margin: 10px;
+        }
+        footer p {
+            text-align: center;
+            margin: 10px;
+            color: snow;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1 class="titulo">DOM</h1>
+        <nav>
+            <a href="#" class="aconra">Inicio</a>
+            <a href="#" class="aconra">Sobre</a>
+            <a href="#" class="aconra">Mais</a>
+            <a href="#" class="ancora">FAQ</a>
+        </nav>
+    </header>
     <div class="container">
         <h1>O que e DOM?</h1>
             <p>
@@ -15,6 +166,35 @@
                 E um conjunto de objetos dentro do navegador que da acesso ao documento.
             </p>
         </div>
+    <div class="container-texto">
+        <div class="container-search">
+            <input type="text" id="loading" placeholder="Procure algo...">
+            <button id="search">Buscar</button>
+        </div>
+        <h1>Agora e possivel criar codigos mais complexos usando DOM.</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sequi culpa incidunt iste voluptatibus. 
+            Temporibus veritatis aliquam, atque, eaque fugiat facilis modi reiciendis ea ratione, enim excepturi eius? Velit, praesentium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolore amet consequuntur numquam minima! Optio aliquam odio temporibus eos aliquid in repellendus?
+             Accusamus sunt sapiente laborum unde, velit nemo consequuntur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti saepe similique doloribus repudiandae rerum illo aliquid? 
+            Accusantium laborum sed qui asperiores magni, quam expedita quia rem, odit, in sequi quo?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ipsam incidunt pariatur quibusdam, voluptatibus at magnam maiores molestiae iste expedita sunt, eaque officiis corrupti omnis rem aliquid similique distinctio odio ullam.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nobis itaque consequuntur molestias veniam ipsam pariatur maxime expedita dolorem! 
+                Atque aliquid iure molestias earum maxime quasi pariatur fuga enim unde!
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Exercitationem eligendi, nemo sit ad debitis dolorem libero laudantium, magni voluptatibus ipsa corporis sint at repellat porro? Non, ullam et! Quam, quo.
+            </p>
+    </div>
+    <footer>
+        <h3>HELLO WORLD</h3>
+        <p>Programmed by DraxP - JS and Document EX</p>
+    </footer>
 
 
 

@@ -10,7 +10,7 @@ corpo.style.background = 'aqua'
 let classe = document.querySelector('div.container')
 classe.style.background = 'black'
 classe.style.color = 'white'
-*/
+
 
 let corpo = document.body
 corpo.style.background = 'black'
@@ -32,6 +32,7 @@ function conf() {
 
 conf();
 
+*/
 
 
-
+ 
