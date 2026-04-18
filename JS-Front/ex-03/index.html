@@ -2,18 +2,37 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resolução de exercicio 2</title>
 </head>
 <body>
     <header>
-
+        <h1>Verificadorde idade</h1>
     </header>
     <main>
         <section>
+            <div class="ano">
+                <label>Ano de nascimento</label>
+                <input type="number" class="nasc" placeholder="Digite seu ano">
+            </div>
+            <div class="sexo">
+                <label>Sexo:</label>
+                Masc:<input type="radio" name="escolha" class="masculino">
+                Femin:<input type="radio" name="escolha" class="feminino">
+            </div>
+            <div class="btn">
+                <button id="search">Verifique</button>
+            </div>
+                <p>Preencha os dados acima para ver o resultado!</p>
             
         </section>
     </main>
+    <footer>
+        <p>&copy; JavaScript-Front</p>
+    </footer>
+
+    <script src="./main.js"></script>
     
 </body>
 </html>

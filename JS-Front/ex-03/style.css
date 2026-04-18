@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #4A8EC5;
+    margin: 20px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+section {
+    background: white;
+    border-radius: 9px;
+    padding: 20px;
+    font-size: 15pt;
+}
+
+.ano {
+    padding: 9px;
+}
+
+.nasc {
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.sexo {
+    padding: 9px;
+}
+
+
+.btn {
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+}
+
+#search {
+    padding: 10px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    border: 3px solid;
+    cursor: pointer;
+}
+
+section p {
+    margin: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+
