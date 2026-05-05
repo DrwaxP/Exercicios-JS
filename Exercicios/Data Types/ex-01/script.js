@@ -18,7 +18,7 @@ Para testes numéricos regulares:
 
 Para converter valores como 12pte 100pxem um número:
     Use parseInt/parseFloatpara a conversão "suave", que lê um número de uma string e retorna o valor que poderia ser lido antes do erro.
-
+ 
 
 Para frações:
     Arredonde usando Math.floor, Math.ceil, Math.trunc, Math.roundou num.toFixed(precision).
@@ -79,4 +79,4 @@ function random(min, max) {
 random();
 
 
-//Execute em partes, pois ira dar "bugs" se executar por completo. Pois existe multiplas variaveis de mesmo nome.
+//Execute em partes, pois ira dar "bugs" se executar por completo. Pois existe multiplas variaveis de mesmo nome.W
