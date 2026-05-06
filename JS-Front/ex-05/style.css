@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+:root {
+    --color1: #126be1;
+    --color2: #393f66;
+    --color3: #252633;
+}
+
+body {
+    color: snow;
+    background: var(--color1);
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+section {
+    padding: 15px;
+    margin: auto;
+    max-width: 800px;
+    border-radius: 9px;
+    background: var(--color2);
+}
+
+section h3 {
+    display: inline-block;
+}
+
+#numb_btn {
+    margin: 4px;
+}
+
+#numb, #numb_btn {
+    justify-content: end;
+    padding: 8px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 30px;
+}
+
+.container_numb {
+    align-items: center;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 5px;
+    max-width: 800px;
+    background: #0e76ff;
+}
+
+select {
+    padding: 20px;
+    max-height: auto;
+}
+
+#btn {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+
